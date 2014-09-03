@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <style type="text/css">
+            @import url('//netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css');
+            @import url('http://jdewit.github.io/bootstrap-timepicker/css/bootstrap-timepicker.min.css');
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Bootstrap Timepicker Example</h1>
+            <form>
+                Click within the input to bring up the timepicker dialog. If you then click the down arrow for either minutes or hours, the hours will have negative values. As soon as you click the up arrow enough times to bring the hours into positive values, clicking down will now do the right thing and set the number of hours equal to 12.
+                <br>
+                <input type="text" name="start_time" class="timepicker" placeholder="h:mm PM" data-default-time="false">
+            </form>
+        </diV>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="//cdn.jsdelivr.net/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bootstrap-timepicker.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                    $('.timepicker').timepicker();
+            });
+
+        </script>
+    </body>
+</html>
